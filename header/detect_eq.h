@@ -20,7 +20,7 @@ void Detect_EQ()
 
 	case noEQ:
 	    if (Amp == 0) {
-		detect_eq_state = noEq;
+		detect_eq_state = noEQ;
 	    }
 	    else if (Amp > 0) {
 		detect_eq_state = EQdetected; 
