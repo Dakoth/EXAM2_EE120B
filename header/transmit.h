@@ -10,7 +10,11 @@ void Transmit()
     switch(transmit_state)
     {
         case TInit:
+		transmit_state = Output; 
             break;
+
+	case Output: 
+	    transmit_state = Output;
         default:
             transmit_state = TInit;
             break;
@@ -19,6 +23,8 @@ void Transmit()
     {
         case TInit:
             break;
+	case Output: 
+	    tmpB = (PingO) | (Eq << 1) | (ZC << 2) | (maxAmp << 3);  
         default:
             break;
     }

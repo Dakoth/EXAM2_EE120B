@@ -3,7 +3,6 @@
 //   static int i;  // defines a local int named i
 
 
-
 /*complete the state machine*/
 
 void Detect_ZC()
@@ -20,6 +19,7 @@ void Detect_ZC()
     switch(detect_zc_state)
     {
         case DZCInit:
+		ZC = 0;
             break;
         default:
             break;
