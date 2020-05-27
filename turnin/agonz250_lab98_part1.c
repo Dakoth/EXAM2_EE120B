@@ -1,4 +1,4 @@
-/*	Author: <your name>
+/*	Author: agonz250
  *	Lab Section:
  *  Exam #2
  *
